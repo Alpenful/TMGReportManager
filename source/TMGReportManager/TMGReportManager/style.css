@@ -1,0 +1,421 @@
+﻿html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #edfcfa;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainForm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "h h h" "B B ." "f f f";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 1fr 40px;
+    z-index: 0;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.grayFont {
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0.1px;
+    color: #808080;
+}
+
+.fontSegoe {
+    font-family: Segoe UI Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.buttonMenu {
+    /*background-image: linear-gradient(#cc0630 0%, #8f0222 75%, #6d0019 100%);*/
+    color: #ffffff;
+    border: hidden;
+    background-color:rgba(0, 0, 0, 0.00);
+}
+
+.filterIcon {
+    top: 70px;
+    left: 30px;
+
+    width: 25px;
+    height: 25px;
+}
+
+.buttonFilterList {
+    top: 73px;
+    left: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: rgba(67, 67, 67, 0.67);
+    border: hidden;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+    .buttonFilterList:hover {
+        font-size: 15px;
+        letter-spacing: -0.5px;
+        color: #0369b9;
+        
+    }
+
+.copyright {
+    padding-left: 45%;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    color: #808080;
+}
+
+
+
+.mainMenu {
+    height: 25px;
+    background-color: #000000;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    grid-area: h;
+    background-color: #0369b9;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    grid-area:f;
+}
+.programName {
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    /*text-shadow: #000000 0px 0px 2px;*/
+    margin-top: 15px;
+    margin-left: 30px;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: -.01em;
+    font-variant: normal;
+    font-weight: bold;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.userName {
+    top: 22px;
+    right: 3%;
+    color: #ffffff;
+}
+
+.lastUpdate{
+    top: 70px;
+    right: 3%;
+}
+
+.mainFormHidden{
+    top: 60px;
+
+    border: none;
+    width:100%;
+    height: 93.6%;
+    background-color: rgba(67, 67, 67, 0.67);
+
+    z-index: 2;
+}
+
+/*Форма вывода из базы*/
+.Body {
+    grid-area:B;
+    height:100%;
+}
+
+.backButton {
+    color: #2394ed;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.00);
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.rezultView {
+    height: 95%;
+}
+
+.holder{
+    padding-left: 30%;
+    padding-top: 90px;
+    display:flex;
+    flex-direction: column;
+}
+
+.linkLabel {
+    display: grid;
+    grid-template-areas: "f s t";
+    grid-template-columns: 270px repeat(2, 1fr);
+    width: 600px;
+    margin: 5px 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #0369b9;
+    letter-spacing: -.01em;
+}
+
+.linkLabel:hover{
+    color: #2394ed;
+    font-weight:600;
+    transition-property:all;
+    transform: scale(1.01);
+    text-decoration: underline;
+}
+
+.sortedlabel {
+    display: grid;
+    grid-template-areas: "f s t";
+    grid-template-columns: 290px repeat(2, 1fr);
+    width: 600px;
+}
+
+.sortedLink {
+    color: #0369b9;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: -.01em;
+}
+
+.sortedLink:hover{
+    color: #2394ed;
+    text-decoration:overline;
+}
+
+/*           */
+.linkLabelUser {
+    display: grid;
+    grid-template-areas: "f s t";
+    grid-template-columns: 320px repeat(2, 1fr);
+    width: 600px;
+    margin: 5px 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #0369b9;
+    letter-spacing: -.01em;
+}
+
+    .linkLabelUser:hover {
+        color: #2394ed;
+        font-weight: 600;
+        transition-property: all;
+        transform: scale(1.01);
+        text-decoration: underline;
+    }
+
+.sortedlabelUser {
+    display: grid;
+    grid-template-areas: "f s t";
+    grid-template-columns: 320px repeat(2, 1fr);
+    width: 600px;
+}
+
+.sortedLinkUser {
+    color: #0369b9;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: -.01em;
+}
+
+    .sortedLinkUser:hover {
+        color: #2394ed;
+        text-decoration: overline;
+    }
+/*           */
+
+
+.backLabel {
+    width: 80px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #808080;
+    letter-spacing: -.01em;
+}
+
+    .backLabel:hover {
+        color: #2394ed;
+        transition-property: all;
+        transform: scale(1.1);
+    }
+
+.firstViewElement {
+    font-size: 13px;
+}
+
+.secondElement{
+}
+
+.thirdElement {
+}
+
+
+
+.filterView {
+    top: 145px;
+    left: 65%;
+    width: 30%;
+    height: 500px;
+}
+
+.filterViewName {
+    left: 100px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.startFilter{
+    top: 10%;
+    left: 25px;
+}
+
+.fromFilter{
+    top: 8.2%;
+    left: 110px;
+}
+
+.endFilter {
+    top: 18%;
+    left: 70px;
+}
+
+.hierFilter {
+    top: 16.2%;
+    left: 110px;
+}
+
+.calendarType {
+    padding: 3px;
+    padding-left: 20px;
+    color: #0369b9;
+    font-size: 18px;
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid #808080;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+.userLabel{
+    top: 32%;
+    left: 25px;
+}
+
+.userDropDown {
+    top: 40%;
+    left: 30px;
+    width: 300px;
+    height: 30px;
+    color: #0369b9;
+    font-size: 120%;
+    border: none;
+    border-bottom: 1px solid #808080;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+.buttonViewFilterList {
+    top: 270px;
+    left: 100px;
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+    color: #0369b9;
+    border-color: #0369b9;
+    border-style:solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+    .buttonViewFilterList:hover {
+        color: #2394ed;
+        box-shadow: #2394ed 0px 0px 10px;
+    }
+
+/*Форма фильтров*/
+.filterForm {
+    top: 60px;
+    left: 0%;
+    border-right: 3px solid #0369b9;
+    height: 93.6%;
+    width: 30%;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+.textBox {
+    resize: none;
+    font-style: italic;
+    font-size: 12px;
+    color: #0369b9;
+}
+
+.filterUserLabel {
+    top: 3%;
+    left: 3%;
+}
+
+.filterUser{
+    top: 6%;
+    left: 3%;
+
+    width: 90%;
+    height: 25%;
+}
+
+.filterTargetLabel{
+    top: 34%;
+    left: 3%;
+}
+
+.filterTarget {
+    top: 37%;
+    left: 3%;
+    width: 90%;
+    height: 25%;
+}
+
+.filterLabel{
+    top: 65%;
+    left: 3%;
+
+}
+
+.filter {
+    top: 68%;
+    left: 3%;
+    width: 90%;
+    height: 15%;
+}
+
+.saveButton {
+    width: 30%;
+    height: 5%;
+    bottom: 3%;
+    right: 5%;
+    font-weight: 600;
+    color: #0369b9;
+    border-color: #0369b9;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.00);
+}
